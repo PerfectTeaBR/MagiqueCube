@@ -6,9 +6,15 @@
 In your .kt file...
 
 ```kotlin
-companion object {
+class HowdyWorld {
+    companion object {
         val logger = LoggerFactory.getLogger(MagiqueCubeLauncher::class.java)
     }
+
+    fun HowdyWorld() {
+        logger.info { "Howdy World!" }
+    }
+}
 ```
 
 Logging:
